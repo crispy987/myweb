@@ -50,7 +50,7 @@ pipeline{
                   withCredentials([string(credentialsId: 'DOCKER_HUB_CREDENTIALS', variable: 'DOCKER_HUB_CREDENTIALS')]) {
                       sh "docker login -u crispy987 -p ${DOCKER_HUB_CREDENTIALS}"
             }
-            sh 'docker push crispy987/spring-boot-mongo'
+            sh 'docker push srini36/spring-boot-mongo'
         }
       }
         
